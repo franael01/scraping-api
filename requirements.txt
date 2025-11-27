@@ -1,0 +1,11 @@
+flask
+waitress
+numpy
+pandas
+scikit-learn
+matplotlib
+seaborn
+requests
+beautifulsoup4
+sqlalchemy
+psycopg2-binary

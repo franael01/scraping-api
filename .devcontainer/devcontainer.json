@@ -1,0 +1,12 @@
+{
+  "name": "pytorch-cuda",
+  "image": "pytorch/pytorch:2.8.0-cuda12.9-cudnn9-runtime",
+  "runArgs": ["--gpus=all"],
+  "workspaceFolder": "/work",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/work,type=bind",
+  "mounts": ["source=scraping_data,target=/data,type=volume"],
+  "postCreateCommand": "pip install --no-cache-dir jupyterlab ipykernel pandas numpy matplotlib scikit-learn beautifulsoup4 lxml requests waitress flask",
+  "customizations": {
+    "vscode": { "extensions": ["ms-python.python","ms-toolsai.jupyter"] }
+  }
+}
