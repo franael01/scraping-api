@@ -6,6 +6,7 @@ app = Flask(__name__)
 
 @app.route('/sakura/test')
 def sakura_test():
+    
     return "First solo API !"
 
 @app.route('/sakura/post_test', methods=['POST'])
